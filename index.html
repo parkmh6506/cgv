@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>영화 그 이상의 감동 CGV</title>
+    <link rel="icon" href="./image/favicon.ico" />
+    <link rel="stylesheet" href="./main.css" />
+    <script defer src="./main.js"></script>
+    <!-- swiper -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- google font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+  <body>
+    <!-- 상단 광고 -->
+    <section class="topAd">
+      <a
+        href="http://www.cgv.co.kr/movies/detail-view/?midx=88000"
+        target="_blank"
+        class="top_advertisement"
+      >
+        <img src="./image/up_advertisement.jpg" alt="top_advertisement" class="topAdImg"/>
+        <img src="./image/ad_close.png" alt="top_advertisement_close" class="topAdImg"/>
+      </a>
+    </section>
+    <!-- 상단 로고/서브 메뉴 -->
+    <header>
+      <div class="inner">
+        <div class="header_contents">
+          <!-- 로고 -->
+          <a
+            href="http://192.168.0.2:5500/index.html"
+            class="logo activate link"
+          >
+            <img src="./image/logo.png" alt="logo" />
+            <span>CULTUREPLEX</span>
+          </a>
+          <!-- 서브 메뉴 -->
+          <ul class="sub_menu">
+            <!-- 서브 메뉴_광고 -->
+            <div>
+              <a href="#">
+                <img src="./image/header_HyundaiCard.png" alt="HyundaiCard" />
+              </a>
+            </div>
+
+            <li>
+              <a href="#" class="link">
+                <img src="./image/header_loginPassword.png" alt="login" />
+                <span>로그인</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="link">
+                <img src="./image/header_loginJoin.png" alt="login_join" />
+                <span>회원가입</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="link">
+                <img src="./image/header_loginMember.png" alt="member" />
+                <span>MY CGV</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="link">
+                <img src="./image/header_loginCustomer.png" alt="customer service" />
+                <span>고객센터</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- 메인 메뉴 -->
+    <nav class="nav">
+      <div class="nav_head">
+        <div class="inner">
+          <div class="head_items">
+            <a href="#" class="link">영화</a>
+            <a href="#" class="link">극장</a>
+            <a href="#" class="link">예매</a>
+            <a href="#" class="link">스토어</a>
+            <a href="#" class="link">이벤트</a>
+            <a href="#" class="link">혜택</a>
+          </div>
+          <!-- 검색 박스 -->
+          <div class="nav_search">
+            <input type="text" class="search_box">
+            <img src="./image/search.png" alt="search_icon">
+          </div>
+        </div>
+      </div>
+      <div class="nav_contents">
+        <div class="inner">
+          <ul class="nav_menu">
+            <li>
+              <ul>
+                <li><a href="#" class="link">영화</a></li>
+                <li><a href="#" class="link">무비차트</a></li>
+                <li><a href="#" class="link">아트하우스</a></li>
+                <li><a href="#" class="link">ICECON</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li><a href="#" class="link">극장</a></li>
+                <li><a href="#" class="link">CGV 극장</a></li>
+                <li><a href="#" class="link">특별관</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li><a href="#" class="link">예매</a></li>
+                <li><a href="#" class="link">빠른예매</a></li>
+                <li><a href="#" class="link">상영스케쥴</a></li>
+                <li><a href="#" class="link">English Ticketing</a></li>
+                <li><a href="#" class="link">English Schedule</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li><a href="#" class="link">스토어</a></li>
+                <li><a href="#" class="link">패키지</a></li>
+                <li><a href="#" class="link">영화관람권</a></li>
+                <li><a href="#" class="link">기프트카드</a></li>
+                <li><a href="#" class="link">콤보</a></li>
+                <li><a href="#" class="link">팝콘</a></li>
+                <li><a href="#" class="link">음료</a></li>
+                <li><a href="#" class="link">스낵</a></li>
+                <li><a href="#" class="link">플레이존</a></li>
+                <li><a href="#" class="link">씨네샵 ></a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li><a href="#" class="link">이벤트</a></li>
+                <li><a href="#" class="link">SPECIAL</a></li>
+                <li><a href="#" class="link">영화/예매</a></li>
+                <li><a href="#" class="link">멤버쉽/CLUB</a></li>
+                <li><a href="#" class="link">CGV 극장별</a></li>
+                <li><a href="#" class="link">제휴할인</a></li>
+                <li><a href="#" class="link">당첨자 발표</a></li>
+                <li><a href="#" class="link">종료된 이벤트</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li><a href="#" class="link">혜택</a></li>
+                <li><a href="#" class="link">CGV 할인정보</a></li>
+                <li><a href="#" class="link">CLUB 서비스</a></li>
+                <li><a href="#" class="link">VIP 라운지</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- 영화 PV -->
+    <div class="moviePv">
+      <div class="box box_right"></div>
+      <div class="box box_bottom"></div>
+      <iframe
+            id="ytplayer"
+            type="text/html"
+            width="100%"
+            height="500px"
+            src="https://www.youtube.com/embed/XfA-Y6K84BE?autoplay=1&loop=1&mute=1&controls=0"
+            frameborder="0"
+            allowfullscreen="allowfullscreen"></iframe>
+            <!-- XfA-Y6K84BE 듄 -->
+            <!-- hU05_Rkm8qE 데드풀3-->
+            <!-- ToE0XWMvJmU 사운드 오브 프리덤-->
+    </div>
+    <!-- 무비차트1 -->
+    <section class="movieChart1">
+      <div class="movieChart1_contents">
+        <!-- 무비차트 상단버튼 -->
+        <div class="movieChart1_btn">
+          <div class="btn_wrap">
+            <h3><a href="#" class="link activate">무비차트</a></h3>
+            <h3><a href="#" class="link">상영예정작</a></h3>
+          </div>
+          <a href="#" class="link">상영관보기 ⦁ 상영관닫기 On/Off</a>
+        </div>
+        <!-- 무비차트2 -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="https://m.media-amazon.com/images/M/MV5BODI0YjNhNjUtYjM0My00MTUwLWFlYTMtMWI2NGUzYjNjNGQzXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_SX300.jpg" alt="chart1">
+                <div class="movieChart2_btn">
+                  <a href="#" class="link btn btn_white">상영관보기</a>
+                  <a href="#" class="link btn btn_red">상영관닫기</a>
+                </div>
+                <span class="rank">1</span>
+                <span class="age age_12"></span>
+                <div class="movie_info">
+                  <span class="movieName">듄-파트2</span>
+                  <div class="info_bottom">
+                    <span>
+                      <img src="./image/egg1.png" alt="egg1">
+                      <span class="percent"> 99%</span>
+                    </span>
+                    <span>예매율 43.7%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://m.media-amazon.com/images/M/MV5BNDNlMzFhODQtMjJlZi00NzcwLTkzOWEtOWU2MTRjY2Y1ZjY3XkEyXkFqcGdeQXVyMTcxMTUwMDE1._V1_SX300.jpg" alt="chart2">
+                <div class="movieChart2_btn">
+                  <a href="#" class="link btn btn_white">상영관보기</a>
+                  <a href="#" class="link btn btn_red">상영관닫기</a>
+                </div>
+                <span class="rank">2</span>
+                <span class="age age_15"></span>
+                <div class="movie_info">
+                  <span class="movieName">파묘</span>
+                  <div class="info_bottom">
+                    <span>
+                      <img src="./image/egg1.png" alt="egg1">
+                      <span class="percent"> 99%</span>
+                    </span>
+                    <span>예매율 26.7%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://m.media-amazon.com/images/M/MV5BNDM4NTk0NjktZDJhMi00MmFmLTliMzEtN2RkZDY2OTNiMDgzXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_SX300.jpg" alt="chart3">
+                <div class="movieChart2_btn">
+                  <a href="#" class="link btn btn_white">상영관보기</a>
+                  <a href="#" class="link btn btn_red">상영관닫기</a>
+                </div>
+                <span class="rank">3</span>
+                <span class="age age_All"></span>
+                <div class="movie_info">
+                  <span class="movieName">윙카</span>
+                  <div class="info_bottom">
+                    <span>
+                      <img src="./image/egg2.png" alt="egg2">
+                      <span class="percent"> 95%</span>
+                    </span>
+                    <span>예매율 5.9%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://m.media-amazon.com/images/M/MV5BNWFkNzI5NDQtY2QyZS00NGE2LWJiNDEtMTI5ZTFmNDE0ZjcwXkEyXkFqcGdeQXVyNjk1NzU1Mjk@._V1_SX300.jpg" alt="chart4">
+                <div class="movieChart2_btn">
+                  <a href="#" class="link btn btn_white">상영관보기</a>
+                  <a href="#" class="link btn btn_red">상영관닫기</a>
+                </div>
+                <span class="rank">4</span>
+                <span class="age age_15"></span>
+                <div class="movie_info">
+                  <span class="movieName">귀멸의 칼날-인연의...</span>
+                  <div class="info_bottom">
+                    <span>
+                      <img src="./image/egg2.png" alt="egg2">
+                      <span class="percent"> 92%</span>
+                    </span>
+                    <span>예매율 5.5%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://m.media-amazon.com/images/M/MV5BNTAwNWQ1ZjQtZDFmMC00YjNlLWFlNjItMjJlYzZkMjJlNzkyXkEyXkFqcGdeQXVyNzc0MTgzMzU@._V1_SX300.jpg
+                " alt="chart5">
+                <div class="movieChart2_btn">
+                  <a href="#" class="link btn btn_white">상영관보기</a>
+                  <a href="#" class="link btn btn_red">상영관닫기</a>
+                </div>
+                <span class="rank">5</span>
+                <span class="age age_15"></span>
+                <div class="movie_info">
+                  <span class="movieName">사운드 오브 프리덤</span>
+                  <div class="info_bottom">
+                    <span>
+                      <img src="./image/egg1.png" alt="egg1">
+                      <span class="percent">  99%</span>
+                    </span>
+                    <span>예매율 3.4%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./image/poster/chart6.jpg" alt="chart6">
+                <div class="movieChart2_btn">
+                  <a href="#" class="link btn btn_white">상영관보기</a>
+                  <a href="#" class="link btn btn_red">상영관닫기</a>
+                </div>
+                <span class="rank">6</span>
+                <span class="age age_12"></span>
+                <div class="movie_info">
+                  <span class="movieName">건국전쟁</span>
+                  <div class="info_bottom">
+                    <span>
+                      <img src="./image/egg2.png" alt="egg2">
+                      <span class="percent"> 92%</span>
+                    </span>
+                    <span>예매율 3.0%</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="swiper-slide">
+                <img src="./image/poster/chart7.jpg" alt="chart7">
+                <div class="movieChart2_btn">
+                  <a href="#" class="link btn btn_white">상영관보기</a>
+                  <a href="#" class="link btn btn_red">상영관닫기</a>
+                </div>
+                <span class="rank">7</span>
+                <span class="age age_All"></span>
+                <div class="movie_info">
+                  <span class="movieName">윌레스와 그로밋 더...</span>
+                  <div class="info_bottom">
+                    <span>
+                      <img src="./image/egg1.png" alt="egg1">
+                      <span class="percent"> 99%</span>
+                    </span>
+                    <span>예매율 1.8%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://m.media-amazon.com/images/M/MV5BNDc2MzNkMjMtZDY5NC00NmQ0LWI1NjctZjRhNWIzZjc4MGRiXkEyXkFqcGdeQXVyMjkwOTAyMDU@._V1_SX300.jpg" alt="chart8">
+                <div class="movieChart2_btn">
+                  <a href="#" class="link btn btn_white">상영관보기</a>
+                  <a href="#" class="link btn btn_red">상영관닫기</a>
+                </div>
+                <span class="rank">8</span>
+                <span class="age age_15"></span>
+                <div class="movie_info">
+                  <span class="movieName">바튼 아카데미</span>
+                  <div class="info_bottom">
+                    <span>
+                      <img src="./image/egg1.png" alt="egg1">
+                      <span class="percent"> 99%</span>
+                    </span>
+                    <span>예매율 1.3%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://m.media-amazon.com/images/M/MV5BMDBmYTZjNjUtN2M1MS00MTQ2LTk2ODgtNzc2M2QyZGE5NTVjXkEyXkFqcGdeQXVyNzAwMjU2MTY@._V1_SX300.jpg" alt="chart9">
+                <div class="movieChart2_btn">
+                  <a href="#" class="link btn btn_white">상영관보기</a>
+                  <a href="#" class="link btn btn_red">상영관닫기</a>
+                </div>
+                <span class="rank">9</span>
+                <span class="age age_15"></span>
+                <div class="movie_info">
+                  <span class="movieName">오펜하이머</span>
+                  <div class="info_bottom">
+                    <span>
+                      <img src="./image/egg1.png" alt="egg1">
+                      <span class="percent"> 93%</span>
+                    </span>
+                    <span>예매율 0.9%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./image/poster/chart10.jpg" alt="chart10">
+                <div class="movieChart2_btn">
+                  <a href="#" class="link btn btn_white">상영관보기</a>
+                  <a href="#" class="link btn btn_red">상영관닫기</a>
+                </div>
+                <span class="rank">10</span>
+                <span class="age age_12"></span>
+                <div class="movie_info">
+                  <span class="movieName">도그데이즈</span>
+                  <div class="info_bottom">
+                    <span>
+                      <img src="./image/egg2.png" alt="egg2">
+                      <span class="percent"> 96%</span>
+                    </span>
+                    <span>예매율 0.8%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://m.media-amazon.com/images/M/MV5BNGIyYWMzNjktNDE3MC00YWQyLWEyMmEtN2ZmNzZhZDk3NGJlXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_SX300.jpgg" alt="chart11">
+                <div class="movieChart2_btn">
+                  <a href="#" class="link btn btn_white">상영관보기</a>
+                  <a href="#" class="link btn btn_red">상영관닫기</a>
+                </div>
+                <span class="rank">11</span>
+                <span class="age age_18"></span>
+                <div class="movie_info">
+                  <span class="movieName">가여운 것들</span>
+                  <div class="info_bottom">
+                    <span>
+                      <img src="./image/egg1.png" alt="egg1">
+                      <span class="percent"> 99%</span>
+                    </span>
+                    <span>예매율 0.7%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./image/poster/chart12.jpg" alt="chart12">
+                <div class="movieChart2_btn">
+                  <a href="#" class="link btn btn_white">상영관보기</a>
+                  <a href="#" class="link btn btn_red">상영관닫기</a>
+                </div>
+                <span class="rank">12</span>
+                <span class="age age_15"></span>
+                <div class="movie_info">
+                  <span class="movieName">데드맨</span>
+                  <div class="info_bottom">
+                    <span>
+                      <img src="./image/egg2.png" alt="egg2">
+                      <span class="percent"> 77%</span>
+                    </span>
+                    <span>예매율 0.6%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://m.media-amazon.com/images/M/MV5BMDc0NDMzYTEtMjcwMC00MTIyLWE2MjctZDc3YTlhMTFjNjJkXkEyXkFqcGdeQXVyNjI4NDY5ODM@._V1_SX300.jpg" alt="chart13">
+                <div class="movieChart2_btn">
+                  <a href="#" class="link btn btn_white">상영관보기</a>
+                  <a href="#" class="link btn btn_red">상영관닫기</a>
+                </div>
+                <span class="rank">13</span>
+                <span class="age age_15"></span>
+                <div class="movie_info">
+                  <span class="movieName">시민덕희</span>
+                  <div class="info_bottom">
+                    <span>
+                      <img src="./image/egg2.png" alt="egg2">
+                      <span class="percent"> 96%</span>
+                    </span>
+                    <span>예매율 0.6%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./image/poster/chart14.jpg" alt="chart14">
+                <div class="movieChart2_btn">
+                  <a href="#" class="link btn btn_white">상영관보기</a>
+                  <a href="#" class="link btn btn_red">상영관닫기</a>
+                </div>
+                <span class="rank">14</span>
+                <span class="age age_12"></span>
+                <div class="movie_info">
+                  <span class="movieName">기적의 시작</span>
+                  <div class="info_bottom">
+                    <span>
+                      <img src="./image/egg1.png" alt="egg1">
+                      <span class="percent"> 40%</span>
+                    </span>
+                    <span>예매율 0.6%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./image/poster/chart15.jpg" alt="chart15">
+                <div class="movieChart2_btn">
+                  <a href="#" class="link btn btn_white">상영관보기</a>
+                  <a href="#" class="link btn btn_red">상영관닫기</a>
+                </div>
+                <span class="rank">15</span>
+                <span class="age age_12"></span>
+                <div class="movie_info">
+                  <span class="movieName">소풍</span>
+                  <div class="info_bottom">
+                    <span>
+                      <img src="./image/egg2.png" alt="egg2">
+                      <span class="percent"> 95%</span>
+                    </span>
+                    <span>예매율 0.5%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://m.media-amazon.com/images/M/MV5BOTI0OGU2ZGItMWJkYi00MTU3LTkxOWUtMGRhZDFmY2JiMWU1XkEyXkFqcGdeQXVyOTgwNTk0MzY@._V1_SX300.jpg" alt="chart16">
+                <div class="movieChart2_btn">
+                  <a href="#" class="link btn btn_white">상영관보기</a>
+                  <a href="#" class="link btn btn_red">상영관닫기</a>
+                </div>
+                <span class="rank">16</span>
+                <span class="age age_12"></span>
+                <div class="movie_info">
+                  <span class="movieName">오키쿠와 세계</span>
+                  <div class="info_bottom">
+                    <span>
+                      <img src="./image/egg1.png" alt="egg1">
+                      <span class="percent"> 99%</span>
+                    </span>
+                    <span>예매율 0.4%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://m.media-amazon.com/images/M/MV5BMjY3ZTU3ZWEtY2Q4MS00ZGUyLWE3ZmQtY2MyMDhjZGE1MGZmXkEyXkFqcGdeQXVyMTA1NjE5MTAz._V1_SX300.jpg" alt="chart17">
+                <div class="movieChart2_btn">
+                  <a href="#" class="link btn btn_white">상영관보기</a>
+                  <a href="#" class="link btn btn_red">상영관닫기</a>
+                </div>
+                <span class="rank">17</span>
+                <span class="age age_All"></span>
+                <div class="movie_info">
+                  <span class="movieName">아기상어 극장판-사...</span>
+                  <div class="info_bottom">
+                    <span>
+                      <img src="./image/egg2.png" alt="egg2">
+                      <span class="percent"> 96%</span>
+                    </span>
+                    <span>예매율 0.4%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://m.media-amazon.com/images/M/MV5BYjA4MTA5N2ItOGVhYS00NzVmLWJlMzEtMjkyODBlMjFjNjVjXkEyXkFqcGdeQXVyMjQ2Nzc4MjM@._V1_SX300.jpg" alt="chart18">
+                <div class="movieChart2_btn">
+                  <a href="#" class="link btn btn_white">상영관보기</a>
+                  <a href="#" class="link btn btn_red">상영관닫기</a>
+                </div>
+                <span class="rank">18</span>
+                <span class="age age_All"></span>
+                <div class="movie_info">
+                  <span class="movieName">스노우 퍼핀즈</span>
+                  <div class="info_bottom">
+                    <span>
+                      <img src="./image/egg2.png" alt="egg2">
+                      <span class="percent"> 84%</span>
+                    </span>
+                    <span>예매율 0.4%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://m.media-amazon.com/images/M/MV5BMDBiYmRkNjUtYzc4My00NGFiLWE2NWUtMGU1ZDA1NTQ3ZjQwXkEyXkFqcGdeQXVyMTM1NjM2ODg1._V1_SX300.jpg" alt="chart19">
+                <div class="movieChart2_btn">
+                  <a href="#" class="link btn btn_white">상영관보기</a>
+                  <a href="#" class="link btn btn_red">상영관닫기</a>
+                </div>
+                <span class="rank">19</span>
+                <span class="age age_15"></span>
+                <div class="movie_info">
+                  <span class="movieName">추락의 해부</span>
+                  <div class="info_bottom">
+                    <span>
+                      <img src="./image/egg2.png" alt="egg2">
+                      <span class="percent"> 96%</span>
+                    </span>
+                    <span>예매율 0.4%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./image/poster/chart20.jpg" alt="chart20">
+                <div class="movieChart2_btn">
+                  <a href="#" class="link btn btn_white">상영관보기</a>
+                  <a href="#" class="link btn btn_red">상영관닫기</a>
+                </div>
+                <span class="rank">20</span>
+                <span class="age age_15"></span>
+                <div class="movie_info">
+                  <span class="movieName">조폭인 내가 고등학...</span>
+                  <div class="info_bottom">
+                    <span>
+                      <img src="./image/egg1.png" alt="egg1">
+                      <span class="percent"> 98%</span>
+                    </span>
+                    <span>예매율 0.3%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev">
+              <span class="material-symbols-outlined">arrow_back_ios</span>
+            </div>
+            <div class="swiper-button-next">
+              <span class="material-symbols-outlined">arrow_forward_ios</span>
+            </div>
+          </div>
+
+          <!-- 카카오 맵 api -->
+          <div id="map" class="map" style="width:100%;height:350px;"></div>
+    </section>
+    <div class="boxbox"></div>
+
+    <!-- 카카오 맵 api script-->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=40bb8dd05b7cc397d5bb70018248e1d3"></script>
+  </body>
+</html>

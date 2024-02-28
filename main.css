@@ -1,0 +1,417 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+/* 기본 세팅 */
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
+}
+.inner {
+  width: 991px;
+  margin: 0 auto;
+  position: relative;
+}
+.link {
+  color: black;
+  text-decoration: none;
+}
+/* section */
+.topAd {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  background-color: #dbd7cc;
+  transition: .3s;
+}
+.topAd.activate {
+  height: 0;
+}
+.top_advertisement {
+  position: relative;
+}
+.top_advertisement .topAdImg.activate {
+  height: 0px;
+}
+.top_advertisement > img:nth-of-type(2) {
+  position: absolute;
+  top: 11px;
+  right: 13px;
+}
+/* Header */
+/* 로고 */
+.header_contents {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 5px;
+}
+.header_contents .logo {
+  display: inline-flex;
+  align-items: flex-end;
+}
+.header_contents .logo > img {
+  width: 117px;
+  height: 53px;
+}
+.header_contents .logo > span {
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.3rem;
+  cursor: text;
+}
+/* 서브 메뉴 */
+.sub_menu {
+  list-style: none;
+  display: flex;
+}
+.sub_menu > div > a > img {
+  width: 136px;
+  height: 39px;
+  margin-top: 10px;
+}
+.sub_menu > li > a {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+.sub_menu > li > a > img {
+  width: 36px;
+  height: 36px;
+  vertical-align: middle;
+}
+.sub_menu > li:nth-of-type(2) > a > img {
+  margin-left: 6px;
+}
+.sub_menu > li:nth-of-type(3) > a > img {
+  margin-left: 3px;
+}
+.sub_menu > li:nth-of-type(4) > a > img {
+  margin-left: 6px;
+}
+.sub_menu > li > a > span {
+  font-size: 13px;
+}
+/* 메인 메뉴 */
+.nav {
+  position: relative;
+  /* position: sticky;
+  top: 0; */
+}
+.nav .nav_head {
+  border-top: 1px solid #EEEEEE;
+  border-bottom: 2px solid #fb4357;
+  display: flex;
+}
+.nav .nav_head .head_items{
+  display: inline-flex;
+  flex-direction: row;
+  padding: 10px 0;
+}
+.nav .nav_head .head_items > a {
+  margin-right: 50px;
+  font-weight: 500;
+}
+.nav .nav_head .head_items > a:nth-child(3) {
+  color: red;
+}
+.nav .nav_head .nav_search {
+  margin-left: 240px;
+  padding: 0 20px 0 10px;
+  display: inline-flex;
+  border-left: 1px solid #cacaca;
+  border-right: 1px solid #cacaca;
+}
+.nav .nav_head .nav_search .search_box {
+  border: none;
+}
+.nav .nav_head .nav_search img {
+  width: 26px;
+  height: 26px;
+  vertical-align: middle;
+}
+.nav .nav_contents {
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  z-index: 100;
+  height: 0;
+  overflow: hidden;
+  transition: .5s;
+}
+.nav:hover .nav_contents{
+  height: 340px;
+}
+.nav .nav_contents .nav_menu {
+  display: flex;
+  padding-bottom: 20px;
+}
+.nav .nav_contents .nav_menu > li {
+  list-style: none;
+  padding-right: 50px;
+  border-right : 1px solid #F1F1F1;
+  margin-top: 20px;
+}
+.nav .nav_contents .nav_menu > li:first-child ~ li {
+  padding-left: 20px
+}
+.nav .nav_contents .nav_menu > li > ul > li {
+  list-style: none;
+  width: 90px;
+}
+.nav .nav_contents .nav_menu > li > ul > li a {
+  font-size: 14px;
+  line-height: 30px;
+}
+.nav .nav_contents .nav_menu > li > ul > li a:hover {
+  text-decoration: underline;
+}
+.nav .nav_contents .nav_menu > li > ul > li:first-child {
+  font-weight: 700;
+}
+/* 영화 PV */
+.moviePv {
+  position: relative;
+}
+.box {
+  position: absolute;
+  background-color: black;
+}
+.box_right {
+  width: 170px;
+  height: 15%;
+  right: 0;
+  z-index: 50;
+}
+.box_bottom {
+  width: 100%;
+  height: 8%;
+  bottom: 10px;
+  right: 0;
+}
+/* 무비 차트 */
+.movieChart1 {
+  background-color: #f1f1f1;
+  margin-top: -5px
+}
+.movieChart1 .movieChart1_contents {
+  width: 1040px;
+  /* 550px */
+  height: 540px;
+  margin: 0 auto;
+  padding: 45px 30px 60px;
+  overflow: hidden;
+  transition: .5s;
+}
+.movieChart1 .movieChart1_contents.on {
+  height: 950px;
+}
+.movieChart1 .movieChart1_contents .movieChart1_btn {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.movieChart1 .movieChart1_contents .movieChart1_btn > .btn_wrap {
+  display: flex;
+  font-size: 22px;
+}
+.movieChart1 .movieChart1_contents .movieChart1_btn > .btn_wrap > h3 > a {
+  color: #666;
+  font-weight: 400;
+}
+.movieChart1 .movieChart1_contents .movieChart1_btn > .btn_wrap > h3 > a.activate {
+  color: black;
+  font-weight: 700;
+}
+.movieChart1 .movieChart1_contents .movieChart1_btn > .btn_wrap > h3:first-child::after{
+    display: inline-block;
+    content: "";
+    width: 1px;
+    height: 15px;
+    background-color: #D8D8D8;
+    margin: 0 15px;
+}
+.movieChart1 .movieChart1_contents .movieChart1_btn > a {
+  display: flex;
+  align-items: center;
+  padding: 4px 32px 4px 15px;
+  font-size: 14px;
+  border: 1px solid #e2e2e2;
+  border-radius: 15px;
+  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.05);
+  background-color: white;
+  background: url('./image/right_arrow.png') no-repeat calc(100% - 7px) center /8px 13px;
+  transition: .5s;
+}
+.movieChart1 .movieChart1_contents .movieChart1_btn > a:hover {
+  background-color: #c6c6c6;
+}
+/* 무비차트 swiper */
+.swiper {
+  width: 100%;
+  height: 490px;
+}
+.swiper .swiper-slide {
+  position: relative;
+}
+.swiper .swiper-slide > .rank {
+  color: #fff;
+  font-size: 50px;
+  font-style: italic;
+  position: absolute;
+  left: 7px;
+  bottom: 245px;
+  transition: .6s;
+}
+.swiper .swiper-slide > .rank.off {
+  display: none;  
+}
+.swiper .swiper-slide > .age {
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  transition: .6s;
+}
+.swiper .swiper-slide > .rank.on,
+.swiper .swiper-slide > .age.on {
+  opacity: 0;
+}
+.swiper .swiper-slide > .age.off {
+  display: none;
+}
+.swiper .swiper-slide > .age_12 {
+  background-image: url('./image/age_12.png');
+}
+.swiper .swiper-slide > .age_15 {
+  background-image: url('./image/age_15.png');
+}
+.swiper .swiper-slide > .age_18 {
+  background-image: url('./image/age_18.png');
+}
+.swiper .swiper-slide > .age_All {
+  background-image: url('./image/age_All.png');
+}
+.swiper .swiper-slide > .movieChart2_btn {
+  position: absolute;
+  top: 70px;
+  left: 25px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+  opacity: 0;
+}
+.swiper .swiper-slide > .movieChart2_btn.on {
+  transform: translateY(250px);
+  opacity: 1;
+}
+.swiper .swiper-slide > .movieChart2_btn .btn {
+  padding: 10px 35px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  transition: .6s;
+}
+.swiper .swiper-slide > .movieChart2_btn .btn:first-child {
+  margin-bottom: 10px;
+}
+.swiper .swiper-slide > .movieChart2_btn .btn_white {
+  color: #787878;
+  background-color: white;
+  margin-bottom: 10px;
+}
+.swiper .swiper-slide > .movieChart2_btn .btn_red {
+  color: white;
+  background-color: #FB4357;
+}
+.swiper .swiper-slide > .movieChart2_btn .btn_white.block,
+.swiper .swiper-slide > .movieChart2_btn .btn_red.block {
+  font-size: 0px;
+  padding: 0px
+}
+.swiper .swiper-slide > img {
+  width: 170px;
+  height: 234px;
+  border-radius: 13px;
+  filter: brightness(80%);
+  transition: .5s;
+}
+.swiper .swiper-slide > img.on {
+  filter: brightness(95%);
+}
+.swiper .swiper-slide .movie_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+.swiper .swiper-slide .movie_info > span:first-child{
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.swiper .swiper-slide .movie_info > .info_bottom > span {
+  font-size: 14px;
+}
+.swiper .swiper-slide .movie_info > .info_bottom > span:first-child::after {
+  display: inline-block;
+  content: "";
+  width: 1px;
+  height: 10px;
+  background-color: #D8D8D8;
+  margin: 0 5px 0 2px;
+}
+.swiper .swiper-slide .movie_info > .info_bottom > span > img {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+.swiper .swiper-wrapper ~ div {
+  color: black;
+  background-color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 120px;
+  opacity: .6;
+  transition: .5s;
+  box-shadow: 3px 3px 20px 3px black;
+}
+.swiper .swiper-wrapper ~ div:hover {
+  opacity: 1;
+}
+.swiper .swiper-wrapper ~ div > span {
+  font-size: 18px;
+}
+.swiper .swiper-button-prev {
+  padding-left: 7px;
+  left: 3px;
+}
+.swiper .swiper-button-next {
+  padding-left: 4px;
+  right: 3px;
+}
+.swiper .swiper-button-prev::after,
+.swiper .swiper-button-next::after {
+  display: none;
+}
+.boxbox {
+  width: 100%;
+  height: 100px;
+  background-color: #e5e5e5;
+}
+.map {
+  margin-top: -40px;
+}
