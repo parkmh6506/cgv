@@ -60,11 +60,17 @@ const images = document.querySelectorAll('.swiper .swiper-slide > img');
 
 clickBtn.addEventListener("click", (event) => {
   event.preventDefault();
-  for(let i = 0; i < 20; i++) {
-    btns[i].classList.toggle('on');
-    ranks[i].classList.toggle('on');
-    ages[i].classList.toggle('on');
-    images[i].classList.toggle('on');
+
+  // 지도가 펼쳐져있다면 접기
+  if (myMapPart.classList.contains("on")) {
+    myMapPart.classList.remove("on");
+  }
+
+  for (let i = 0; i < 20; i++) {
+    btns[i].classList.toggle("on");
+    ranks[i].classList.toggle("on");
+    ages[i].classList.toggle("on");
+    images[i].classList.toggle("on");
   }
 })
 
@@ -293,7 +299,7 @@ const myMapPart = document.querySelector('.movieChart1 .movieChart1_contents')
 const viewBtns = document.querySelectorAll('.movieChart2_btn .btn_white')
 const closeBtns = document.querySelectorAll('.btn_red');
 
-// 지도에 표시된 마커 객체를 가지고 있을 배열입니다
+// 지도에 표시된 마커 객체를 가지고 있을 배열
 var markers = [];
 
 closeBtns.forEach((closeBtn, index) => {
@@ -1215,13 +1221,18 @@ viewBtns.forEach((viewBtn, index) => {
 
 // 상영예정작 - 상영관보기 or 상영관닫기 버튼 비활성화
 movieChartBtn2.addEventListener('click', () => {
-  if (movieChartBtn2.classList.contains('activate')) {
-    viewBtns.forEach(viewBtn => {
-      viewBtn.classList.add('block');
-    })
-    closeBtns.forEach(closeBtn => {
-      closeBtn.classList.add('block');
-    })
+  // 지도가 펼쳐져있다면 접기
+  if (myMapPart.classList.contains("on")) {
+    myMapPart.classList.remove("on");
+  }
+    
+  if (movieChartBtn2.classList.contains("activate")) {
+    viewBtns.forEach((viewBtn) => {
+      viewBtn.classList.add("block");
+    });
+    closeBtns.forEach((closeBtn) => {
+      closeBtn.classList.add("block");
+    });
   }
 })
 
