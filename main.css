@@ -100,8 +100,6 @@
 /* 메인 메뉴 */
 .nav {
   position: relative;
-  /* position: sticky;
-  top: 0; */
 }
 .nav .nav_head {
   border-top: 1px solid #eeeeee;
@@ -437,4 +435,39 @@
   font-size: 13px;
   color: #666;
   margin-top: 240px;
+}
+.footer_info .company_info {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0;
+}
+.footer_info .company_info > p {
+  font-weight: 500;
+  font-size: 13px;
+  color: #666;
+}
+.footer_info .company_info .company_info_list:nth-child(2),
+.footer_info .company_info .company_info_list:nth-child(3) {
+  text-decoration: none;
+}
+.footer_info .company_info .company_info_list:nth-child(2) > a,
+.footer_info .company_info .company_info_list:nth-child(3) > a {
+  font-weight: 500;
+  font-size: 13px;
+  color: #666;
+}
+.footer_info .company_info .company_info_list:nth-child(2) > a:after,
+.footer_info .company_info .company_info_list:nth-child(3) > a:after {
+  display: inline-block;
+  content: "";
+  width: 1px;
+  height: 10px;
+  background-color: #d8d8d8;
+  margin: 0 5px 0 11px;
+}
+.footer_info.company_info.company_info_list:nth-child(2)
+  > a:nth-of-type(4):after,
+.footer_info.company_info.company_info_list:nth-child(3)
+  > a:nth-of-type(4):after {
+  display: none;
 }
