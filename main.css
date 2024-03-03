@@ -473,6 +473,72 @@
   color: #666;
   margin-top: 4px;
 }
+/* special */
+.special .special_header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.special .special_header h3 {
+  font-size: 30px;
+  font-weight: 700px;
+  color: #222;
+}
+.special .special_header a {
+  display: flex;
+  align-items: center;
+  padding: 4px 32px 4px 15px;
+  font-size: 14px;
+  border: 1px solid #e2e2e2;
+  border-radius: 15px;
+  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.05);
+  background-color: white;
+  background: url("./image/right_arrow.png") no-repeat calc(100% - 7px) center /
+    8px 13px;
+  margin-top: 7px;
+}
+.special .special_wrap {
+  display: flex;
+  flex-direction: row;
+}
+.special .special_wrap img {
+  width: 500px;
+  height: 260px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.special .special_wrap .special_info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.special .special_wrap .special_info a {
+  display: flex;
+  justify-content: space-between;
+  padding: 19px 25px 19px 19px;
+  width: 450px;
+  height: 63px;
+  margin: 0 0 3px 40px;
+}
+.special .special_wrap .special_info a.on {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.special .special_wrap .special_info a:hover {
+  background-color: #f1f1f1;
+}
+.special .special_wrap .special_info a > span:first-child {
+  font-size: 18px;
+  font-weight: 400;
+  color: #222;
+}
+.special .special_wrap .special_info a > span:nth-of-type(2) {
+  font-size: 14px;
+  color: #666;
+  padding: 2px 7px;
+  background-color: #f6f6f6;
+  border-radius: 5px;
+}
 /* package */
 .package .package_wrap {
   display: flex;
