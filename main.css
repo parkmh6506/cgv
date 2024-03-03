@@ -423,6 +423,59 @@
 .map {
   margin-top: -40px;
 }
+/* package */
+.package .package_wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+.package .package_wrap li {
+  list-style: none;
+  width: 310px;
+  padding: 20px 20px 30px;
+  border: 1px solid #e4e4e4;
+  border-radius: 10px;
+}
+.package .package_wrap li .title_box {
+  display: flex;
+  justify-content: space-between;
+}
+.package .package_wrap li .title_box span {
+  font-size: 20px;
+  font-weight: 500;
+  color: #222;
+}
+.package .package_wrap li .title_box a {
+  font-size: 12px;
+  font-weight: 400;
+  color: #222;
+}
+.package .package_wrap li .package_box {
+  display: flex;
+  justify-content: left;
+  margin-top: 20px;
+  text-decoration: none;
+}
+.package .package_wrap li .package_box img {
+  width: 75px;
+  height: 75px;
+  border-radius: 5px;
+}
+.package .package_wrap li .package_box .package_info {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.package .package_wrap li .package_box .package_info span:first-child {
+  font-weight: 500;
+  font-size: 14px;
+  color: #222;
+}
+.package .package_wrap li .package_box .package_info span:nth-of-type(2) {
+  font-weight: 700;
+  font-size: 16px;
+  color: #222;
+}
 /* footer */
 .footer_info .policy {
   display: flex;
